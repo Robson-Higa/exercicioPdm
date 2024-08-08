@@ -1,9 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+i//mport { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HomeScreen from './scr/pages/HomeScreen';
+import HomeScreen from './src/pages/HomeScreen';
 import ColorScreen from './src/pages/ColorScreen';
-import FuelScreen from './scr/pages/FuelScreen';
+import FuelScreen from './src/pages/FuelScreen';
 import ScheduleScreen from './src/pages/ScheduleScreen';
 import SumScreen from './src/pages/SumScreen';
 
@@ -20,24 +20,24 @@ export default function App() {
         />
         <Stack.Screen 
           name="Color" 
-          component={ICQScreen}
+          component={ColorScreen}
           options={{ headerShown: true }}
         />
         <Stack.Screen 
           name="Fuel" 
-          component={IMCScreen} 
+          component={FuelScreen} 
           options={{ headerShown: true }}
         />
 
         <Stack.Screen 
           name="Schedule" 
-          component={IMCScreen} 
+          component={ScheduleScreen} 
           options={{ headerShown: true }}
         />
 
         <Stack.Screen 
           name="Sum" 
-          component={IMCScreen} 
+          component={SumScreen} 
           options={{ headerShown: true }}
         />
       </Stack.Navigator>
